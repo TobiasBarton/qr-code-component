@@ -1,90 +1,62 @@
 html,
 body {
     height: 100%;
-}
-
-body {
-    margin: 0px;
-    font-family: 'Outfit', sans-serif;
-}
-
-p {
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-.main-element {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
     background-color: hsl(212, 45%, 89%);
 }
 
-.inner-element {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 5%;
+body {
+    font-family: 'Outfit', sans-serif;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 500px;
 }
 
-.qr-code-container {
-    margin-left: 8px;
-    margin-right: 8px;
+.main-component {
+    background-color: hsl(0, 0%, 100%);
+    height: 490px;
+    width: 320px;
+    border-radius: 5%;
+}
+
+.inner-component {
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-code {
+    margin-bottom: 12px;
 }
 
 .qr-code-img {
-    border-radius: 5%;
     width: 290px;
     height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5%;
 }
 
-.qr-heading-container {
-    width: 275px;
-}
-
-.qr-heading {
-    font-size: 21px;
-    color: hsl(218, 44%, 22%);
-}
-
-.text-container {
-    overflow-wrap: break-word;
+.qr-text {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
+    width: 290px;
 }
 
-.description-contaner {
-    padding-left: 21px;
-    padding-right: 21px;
+.qr-text-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(218, 44%, 22%);
+    margin-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-.description {
-    color: hsl(212, 45%, 89%);
+.qr-text-description {
     font-size: 15px;
-    padding: 5px;
-}
-
-.description {
-    padding-top: 0px;
+    font-weight: 400;
+    color: hsla(212, 46%, 89%);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
 }
